@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <!--добавляем иконку размером 16*16px на вкладку браузера-->
+
+    <meta name="description" content="" />
+    <!--метатег для продвижения нашего сайта. При выдаче сайта в поисковике (в виде списка сайтов) под заголовком сайта (значение title) будет отбражаться описание, которое находится в значении атрибута content-->
+    <meta
+      name="keywords"
+      content="создание сайтов, современный джаваскрипт, итд"
+    />
+    <!--ключевые слова по которым можно запросить наш сайт. Этот метатэг (keywords) не используеться гуглом, но используеться яндексом. Для гугла достаточно description и title-->
+
+    <script defer src="lang.js"></script>
+    <script defer src="script.js"></script>
+    <title>Personal Folio</title>
+  </head>
+  <body>
+    <div class="page">
+      <!--Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <div class="header-brand lng-brand">WEBDEVELOPER</div>
+
+            <div class="header-logo"><img src="img/code.svg" alt="" /></div>
+
+            <nav class="header-nav">
+              <a class="header-nav-link lng-home active" href="home">Home</a>
+              <a class="header-nav-link lng-about" href="about">About me</a>
+              <a class="header-nav-link lng-contacts" href="contacts"
+                >Contacts</a
+              >
+              <select class="select">
+                <option class="lng-en" value="en">EN</option>
+                <option class="lng-ua" value="ua">UA</option>
+              </select>
+            </nav>
+          </div>
+        </div>
+        <!-- /.container-->
+      </header>
+
+      <!-- Main -->
+      <div class="container">
+        <main class="content">
+          <div class="visibil-content" id="home">
+            <div class="content-header">
+              <h2 class="subtitle lng-subtitle">My name is</h2>
+              <h1 class="title lng-title1">
+                Valentyn Yurchenko and I'm <span>Web Developer</span>
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                It is long established fast that a reader will be distracted by
+                the readable content of a page when looking at its layout. The
+                point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like
+              </p>
+            </div>
+            <a class="btn btn-contacts" href="#">Contact me</a>
+          </div>
+
+          <div class="visibil-content hidden" id="about">
+            <div class="content-header">
+              <h1 class="title lng-title2">Valentyn <span>Yurchenko</span></h1>
+            </div>
+            <div class="text">
+              <p>
+                It is long established fast that a reader will be distracted by
+                the readable content of a page when looking at its layout. The
+                point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like
+              </p>
+              <p>
+                It is long established fast that a reader will be distracted by
+                the readable content of a page when looking at its layout. The
+                point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like
+              </p>
+              <p>
+                It is long established fast that a reader will be distracted by
+                the readable content of a page when looking at its layout. The
+                point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like
+              </p>
+            </div>
+          </div>
+
+          <div class="visibil-content hidden" id="contacts">
+            <div class="content-header">
+              <h1 class="title lng-title3">Write me a <span>message</span></h1>
+              <div class="text">
+                <p>
+                  Many desktop publishing packages and web page editors now use
+                  Lorem
+                </p>
+              </div>
+            </div>
+
+            <form class="form" action="/" method="post">
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="textarea"
+                  name="text"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-full" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+      <!-- /.container-->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="contacts">
+            <a class="contacts-link" href="mailto:valentin.urchenko@gmail.com">
+              <img
+                class="contacts-icon"
+                src="img/mail.svg"
+                alt=""
+              />valentin.urchenko@gmail.com</a
+            >
+            <a class="contacts-link" href="tel:+380683055810">
+              <img class="contacts-icon" src="img/tel.svg" alt="" />+380
+              683-055-810</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <img class="author" src="img/me-photo-rb.png" alt="" />
+    </div>
+    <!-- /.page-->
+  </body>
+</html>
